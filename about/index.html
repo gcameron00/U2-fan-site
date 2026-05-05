@@ -1,15 +1,157 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>About</title>
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <h1>About</h1>
-    <p><a href="/">Back home</a></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About this U2 fan site — why it exists, how it's built, and the story of the fan behind it.">
+  <title>About — U2 Fan Site</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="/" class="nav-brand">U<span>2</span> Fan</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/discography/">Discography</a></li>
+      <li><a href="/concerts/">Concerts</a></li>
+      <li><a href="/history/">My Story</a></li>
+      <li><a href="/band/">The Band</a></li>
+      <li><a href="/media/">Media</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Home</a> / <span>About</span></p>
+    <h1>About This Site</h1>
+    <div class="divider"></div>
+    <p class="subtitle">Why this fan site exists, how it was built, and what it's trying to be.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap: 4rem; align-items: start;">
+
+      <div class="prose">
+        <div class="section-header">
+          <span class="section-label">The Why</span>
+          <h2>Why This Site</h2>
+        </div>
+
+        <p>Most fan pages are either massive wikis full of every conceivable fact, or sparse social media profiles that capture nothing beyond a playlist. This site is trying to be something different: a personal record of what it means to be a U2 fan — not just a data repository, but a living document of a relationship with music that has lasted decades.</p>
+
+        <p>The discography section isn't trying to replace Wikipedia. The concerts page isn't trying to be setlist.fm. The band history doesn't aspire to be a biography. What this site does — or tries to — is capture the personal dimension: what these albums mean, what those concerts felt like, why this band specifically has mattered through so many different periods of a life.</p>
+
+        <p>Every serious music fan deserves a place that takes their fandom seriously. This is mine.</p>
+
+        <h3>What It Covers</h3>
+        <p>The site has five main sections: the full <a href="/discography/">discography</a> with personal notes on all 14 studio albums; a <a href="/concerts/">concert log</a> tracking every show attended; a <a href="/history/">personal history</a> of how U2 became important; detailed <a href="/band/">profiles of the band</a> and members; and a <a href="/media/">media library</a> for photos and visuals.</p>
+
+        <h3>Who Made It</h3>
+        <p>This site is maintained by a U2 fan who first heard With or Without You in 1987 and hasn't stopped listening since. Nine concerts, 14 studio albums, and approximately no regrets.</p>
+
+        <h3>Disclaimer</h3>
+        <p>This site is not affiliated with U2, Live Nation, Universal Music Group, or any representative of the band or their management. All opinions are personal. All facts are as accurate as I can make them. If something is wrong, it's a mistake, not malice.</p>
+
+        <p>Album covers, band photos, and all commercial imagery belong to their respective rights holders. This site uses placeholder visuals until personal photographs can be sourced. No commercial use is intended or implied.</p>
+      </div>
+
+      <div>
+        <div class="section-header">
+          <span class="section-label">The How</span>
+          <h2>How It's Built</h2>
+        </div>
+
+        <div class="band-fact">
+          <span class="band-fact-icon">📄</span>
+          <div>
+            <h4>Static HTML / CSS / JS</h4>
+            <p>No frameworks. No React. No Vue. No build step. Just HTML files, a stylesheet, and a small vanilla JS file. Fast, simple, maintainable.</p>
+          </div>
+        </div>
+
+        <div class="band-fact">
+          <span class="band-fact-icon">☁️</span>
+          <div>
+            <h4>Hosted on Cloudflare Pages</h4>
+            <p>Deployed on Cloudflare's global CDN. Pages are served from the edge — fast load times anywhere in the world. Deploys automatically on every push to main.</p>
+          </div>
+        </div>
+
+        <div class="band-fact">
+          <span class="band-fact-icon">🎨</span>
+          <div>
+            <h4>Design</h4>
+            <p>Custom CSS design system. Dark theme. Oswald for headings (condensed, high-impact), Inter for body text. Color palette drawn from U2's visual identity — deep reds, amber, near-black.</p>
+          </div>
+        </div>
+
+        <div class="band-fact">
+          <span class="band-fact-icon">📱</span>
+          <div>
+            <h4>Responsive</h4>
+            <p>Works on phones, tablets, and desktops. CSS Grid and Flexbox handle layout. Mobile navigation with a hamburger menu. No JavaScript required for layout.</p>
+          </div>
+        </div>
+
+        <div class="band-fact">
+          <span class="band-fact-icon">🔓</span>
+          <div>
+            <h4>Open Source</h4>
+            <p>The source code for this site lives on GitHub. Fork it, adapt it, use it as the foundation for your own fan site — for U2 or anyone else.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-label">Pages</span>
+            <h2>Site Map</h2>
+          </div>
+          <ul style="display:flex; flex-direction:column; gap:.5rem;">
+            <li><a href="/" style="color:var(--text-muted); font-size:.9rem;">/ — Home</a></li>
+            <li><a href="/discography/" style="color:var(--text-muted); font-size:.9rem;">/discography/ — All 14 Studio Albums</a></li>
+            <li><a href="/concerts/" style="color:var(--text-muted); font-size:.9rem;">/concerts/ — Concert Log</a></li>
+            <li><a href="/history/" style="color:var(--text-muted); font-size:.9rem;">/history/ — My Story</a></li>
+            <li><a href="/band/" style="color:var(--text-muted); font-size:.9rem;">/band/ — The Band</a></li>
+            <li><a href="/media/" style="color:var(--text-muted); font-size:.9rem;">/media/ — Media Library</a></li>
+            <li><a href="/about/" style="color:var(--text-muted); font-size:.9rem;">/about/ — This Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">U<span>2</span> Fan</div>
+      <ul class="footer-links">
+        <li><a href="/discography/">Discography</a></li>
+        <li><a href="/concerts/">Concerts</a></li>
+        <li><a href="/history/">My Story</a></li>
+        <li><a href="/band/">The Band</a></li>
+        <li><a href="/media/">Media</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <p class="footer-copy">A personal fan site. Not affiliated with U2 or their management.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
