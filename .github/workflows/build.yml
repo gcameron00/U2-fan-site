@@ -1,0 +1,33 @@
+name: Build site with Claude Code
+
+on:
+  workflow_dispatch:
+    inputs:
+      description:
+        description: Project description
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          direct_prompt: |
+            You are setting up a new website. The project description is:
+
+            "${{ github.event.inputs.description }}"
+
+            Based on this description, update the site content:
+            - Update index.html with a fitting title, headline, and introductory content
+            - Update about/index.html with relevant background about the project
+            - Keep the existing HTML structure and CSS — only change the content
+
+            Commit the changes with the message "Initial content from site-builder".
