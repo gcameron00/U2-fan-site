@@ -1,17 +1,143 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Home</title>
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script defer src="/assets/js/main.js"></script>
-  </head>
-  <body>
-    <h1>It works 🎉</h1>
-    <p>This site is deployed using Cloudflare Pages.</p>
-    <p><a href="/about/">About</a></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal fan site dedicated to U2 — celebrating the music, the concerts, the memories, and the four men from Dublin who changed rock and roll.">
+  <title>U2 Fan Site — Home</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="/" class="nav-brand">U<span>2</span> Fan</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/discography/">Discography</a></li>
+      <li><a href="/concerts/">Concerts</a></li>
+      <li><a href="/history/">My Story</a></li>
+      <li><a href="/band/">The Band</a></li>
+      <li><a href="/media/">Media</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">A personal fan site</p>
+      <h1>The <em>Greatest</em><br>Rock Band<br>in the World</h1>
+      <p class="hero-lead">
+        From Dublin to the world's biggest stages — celebrating over four decades
+        of music, meaning, and moments that defined a life.
+      </p>
+      <div class="hero-actions">
+        <a href="/discography/" class="btn btn-primary">Explore Discography</a>
+        <a href="/concerts/" class="btn btn-outline">Concert Log</a>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-number">14</span>
+        <span class="stat-label">Studio Albums</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">46</span>
+        <span class="stat-label">Years Active</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">170M+</span>
+        <span class="stat-label">Records Sold</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">9</span>
+        <span class="stat-label">Shows Attended</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Explore</span>
+      <h2>What's Inside</h2>
+      <p>Everything a U2 fan cares about — all in one place.</p>
+    </div>
+
+    <div class="site-sections">
+      <a href="/discography/" class="section-card">
+        <span class="icon">💿</span>
+        <h3>Discography</h3>
+        <p>All 14 studio albums from Boy (1980) to Songs of Experience (2017), with key tracks and notes on each era.</p>
+      </a>
+      <a href="/concerts/" class="section-card">
+        <span class="icon">🎤</span>
+        <h3>Concerts</h3>
+        <p>A personal log of every U2 show attended — dates, venues, tours, and the memories that come with them.</p>
+      </a>
+      <a href="/history/" class="section-card">
+        <span class="icon">📖</span>
+        <h3>My Story</h3>
+        <p>How U2 became the soundtrack to a life. From first listen to the Sphere — a timeline of obsession.</p>
+      </a>
+      <a href="/band/" class="section-card">
+        <span class="icon">🎸</span>
+        <h3>The Band</h3>
+        <p>Profiles of Bono, The Edge, Adam Clayton, and Larry Mullen Jr. — four Dubliners who changed everything.</p>
+      </a>
+      <a href="/media/" class="section-card">
+        <span class="icon">📷</span>
+        <h3>Media Library</h3>
+        <p>Photos from concerts, albums, and press — a visual archive of four decades of U2.</p>
+      </a>
+      <a href="/about/" class="section-card">
+        <span class="icon">ℹ️</span>
+        <h3>About This Site</h3>
+        <p>Why this site exists, how it's built, and the story of the fan behind it.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="quote-block">
+      <blockquote>
+        "Music can change the world because it can change people."
+      </blockquote>
+      <cite>— Bono</cite>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">U<span>2</span> Fan</div>
+      <ul class="footer-links">
+        <li><a href="/discography/">Discography</a></li>
+        <li><a href="/concerts/">Concerts</a></li>
+        <li><a href="/history/">My Story</a></li>
+        <li><a href="/band/">The Band</a></li>
+        <li><a href="/media/">Media</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <p class="footer-copy">A personal fan site. Not affiliated with U2 or their management.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
